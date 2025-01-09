@@ -10,7 +10,7 @@ document.getElementById("submit-btn").addEventListener("click", async () => {
       const data = await response.json();
   
       if (data.success) {
-        resultEl.textContent = `Coordinates: ${data.coordinates}`;
+        resultEl.textContent = `Correct! Coordinates: ${data.coordinates}`;
       } else {
         resultEl.textContent = "Invalid TOTP code. Please try again.";
       }
